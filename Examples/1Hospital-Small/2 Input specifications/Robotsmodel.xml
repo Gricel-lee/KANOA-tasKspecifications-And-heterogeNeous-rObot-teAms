@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robots>
+  	
+  	<robot description="robot1" ID="r1" rloc="l1" loc_descripion="Warehouse1">
+  		<robottype  description="robotCleaner1" ID="rt1">
+  	  	    <capability description="cBrushFloor" ID="c1" canruntask="at1" efficiency="1" prob_success="99%"/>
+  		    <capability description="cUVSanitize" ID="c2" canruntask="at2" efficiency="1" prob_success="95%"/>
+  		    <capability description="cAskPermission" ID="c3" canruntask="at4" efficiency="1" prob_success="99"/>
+  		</robottype> 
+  	</robot>
+  	
+  	<robot description="robot2" 	ID="r2" rloc="l2" loc_descripion="Warehouse2">
+  		<robottype  description="robotCleaner2" ID="rt1">
+  	  	    <capability description="cBrushFloor" ID="c1" canruntask="at1" efficiency="0.85" prob_success="90%"/>
+  		    <capability description="cUVSanitize" ID="c2" canruntask="at2" efficiency="0.92" prob_success="85%"/>
+  		    <capability description="cAskPermission" ID="c3" canruntask="at4" efficiency="0.50" prob_success="98"/>
+  		</robottype> 
+  	</robot>
+  	
+  	<robot description="robot3" 	ID="r3" rloc="l3" loc_descripion="Warehouse3">
+  		<robottype  description="robotPicknPlace" ID="rt2">
+  	  	  	<capability description="cMoveObject" ID="c4" canruntask="at3" efficiency="1" prob_success="89%"/>
+  	  	  	<capability description="cFeedPatient1" ID="c5" canruntask="at5" efficiency="1" prob_success="89%"/>
+  	  	  	<capability description="cFeedPatient2" ID="c6" canruntask="at6" efficiency="1" prob_success="89%"/>
+  	  	  	<capability description="cFeedPatient3" ID="c7" canruntask="at7" efficiency="1" prob_success="89%"/>
+  	  	  	<capability description="cDeliverDocument1" ID="c8" canruntask="at8" efficiency="1" prob_success="89%"/>
+  	  	  	<capability description="cDeliverDocument2" ID="c9" canruntask="at9" efficiency="1" prob_success="89%"/>
+  	  	  	<capability description="cDeliverDocument3" ID="c10" canruntask="at10" efficiency="1" prob_success="89%"/>
+  		</robottype> 
+  	</robot>
+  	
+  	<robot description="robot4" 	ID="r4" rloc="l4" loc_descripion="Warehouse4">
+  		<robottype  description="robotPicknPlace" ID="rt2">
+  	  	  	<capability description="cMoveObject" ID="c4" canruntask="at3" efficiency="1.14" prob_success="95%"/>
+  	  	  	<capability description="cFeedPatient1" ID="c5" canruntask="at5" efficiency="2" prob_success="95%"/>
+  	  	  	<capability description="cFeedPatient2" ID="c6" canruntask="at6" efficiency="1.5" prob_success="95%"/>
+  	  	  	<capability description="cFeedPatient3" ID="c7" canruntask="at7" efficiency="1" prob_success="95%"/>
+  	  	  	<capability description="cDeliverDocument1" ID="c8" canruntask="at8" efficiency="1" prob_success="95%"/>
+  	  	  	<capability description="cDeliverDocument2" ID="c9" canruntask="at9" efficiency="1" prob_success="95%"/>
+  	  	  	<capability description="cDeliverDocument3" ID="c10" canruntask="at10" efficiency="1" prob_success="95%"/>
+  		</robottype> 
+  	</robot>
+	
+</robots>

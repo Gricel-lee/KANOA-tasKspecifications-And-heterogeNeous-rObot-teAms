@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tasks>
+
+	<atomic_task description="atCleanFloor" 	ID="at1" robots="1" duration="1" location="l9" loc_descripion="RoomA"/>
+	
+	<atomic_task description="atSanitizeRoom" ID="at2" robots="1" duration="2" location="l13" loc_descripion="RoomE"/>
+	
+	<atomic_task description="atMoveEquipment" ID="at3" robots="2" duration="3" location="l9" loc_descripion="RoomA"/>
+	
+	<atomic_task description="atGetPermission" ID="at4" robots="1" duration="4" location="l10" loc_descripion="RoomB"/>
+
+	<atomic_task description="atFeedPatient1" ID="at5" robots="1" duration="1" location="l9" loc_descripion="RoomA"/>
+	<atomic_task description="atFeedPatient2" ID="at6" robots="1" duration="1" location="l10" loc_descripion="RoomB"/>
+	<atomic_task description="atFeedPatient3" ID="at7" robots="1" duration="1" location="l11" loc_descripion="RoomC"/>
+
+	<atomic_task description="atDeliverDocument1" ID="at8" robots="1" duration="1" location="l9" loc_descripion="RoomA"/>
+	<atomic_task description="atDeliverDocument1" ID="at9" robots="1" duration="1" location="l10" loc_descripion="RoomB"/>
+	<atomic_task description="atDeliverDocument1" ID="at10" robots="1" duration="1" location="l11" loc_descripion="RoomC"/>
+	
+	<compound_task description="ctCleanRoom" ID="ct1" tasks="at1,at2" ordered="False" consecutive="True" />
+	
+	<compound_task description="ctCleanPatientRoom" ID="ct2" tasks="at4,ct1"  ordered="True" consecutive="True"/>
+
+	<compound_task description="ctFeedPatients" ID="ct3" tasks="at5,at6,at7" ordered="False" consecutive="True"/>
+
+	<compound_task description="atDeliverDocuments" ID="ct4" tasks="at8,at9,at10" ordered="False" consecutive="False"/>
+
+</tasks>

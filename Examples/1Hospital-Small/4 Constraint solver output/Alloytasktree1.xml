@@ -1,0 +1,147 @@
+<alloy builddate="2012-09-25 15:54 EDT">
+
+<instance bitwidth="0" maxseq="0" command="Run TaskAllocation for exactly 6 Mission, 14 AtomicTask, 6 CompoundTask, exactly 1 at4, exactly 1 at3, exactly 1 at6, exactly 1 at5, exactly 1 at8, exactly 1 at7, exactly 1 at9, exactly 3 at2, exactly 3 at1, exactly 1 at10, exactly 1 ct2, exactly 3 ct1, exactly 1 ct4, exactly 1 ct3" filename="">
+
+<sig label="seq/Int" ID="0" parentID="1" builtin="yes">
+</sig>
+
+<sig label="Int" ID="1" parentID="2" builtin="yes">
+</sig>
+
+<sig label="String" ID="3" parentID="2" builtin="yes">
+</sig>
+
+<sig label="this/t1" ID="4" parentID="5">
+   <atom label="t1$0"/>
+</sig>
+
+<sig label="this/t2" ID="6" parentID="5">
+   <atom label="t2$0"/>
+</sig>
+
+<sig label="this/t3" ID="7" parentID="5">
+   <atom label="t3$0"/>
+</sig>
+
+<sig label="this/t4" ID="8" parentID="5">
+   <atom label="t4$0"/>
+</sig>
+
+<sig label="this/t5" ID="9" parentID="5">
+   <atom label="t5$0"/>
+</sig>
+
+<sig label="this/t6" ID="10" parentID="5">
+   <atom label="t6$0"/>
+</sig>
+
+<sig label="this/Mission" ID="5" parentID="2" abstract="yes">
+</sig>
+
+<field label="dotask" ID="11" parentID="5">
+   <tuple> <atom label="t5$0"/> <atom label="ct3$0"/> </tuple>
+   <tuple> <atom label="t3$0"/> <atom label="at3$0"/> </tuple>
+   <tuple> <atom label="t6$0"/> <atom label="ct4$0"/> </tuple>
+   <tuple> <atom label="t4$0"/> <atom label="ct2$0"/> </tuple>
+   <tuple> <atom label="t1$0"/> <atom label="ct1$2"/> </tuple>
+   <tuple> <atom label="t2$0"/> <atom label="ct1$1"/> </tuple>
+   <types> <type ID="5"/> <type ID="12"/> </types>
+   <types> <type ID="5"/> <type ID="13"/> </types>
+</field>
+
+<sig label="this/at4" ID="14" parentID="12">
+   <atom label="at4$0"/>
+</sig>
+
+<sig label="this/at3" ID="15" parentID="12">
+   <atom label="at3$0"/>
+</sig>
+
+<sig label="this/at6" ID="16" parentID="12">
+   <atom label="at6$0"/>
+</sig>
+
+<sig label="this/at5" ID="17" parentID="12">
+   <atom label="at5$0"/>
+</sig>
+
+<sig label="this/at8" ID="18" parentID="12">
+   <atom label="at8$0"/>
+</sig>
+
+<sig label="this/at7" ID="19" parentID="12">
+   <atom label="at7$0"/>
+</sig>
+
+<sig label="this/at9" ID="20" parentID="12">
+   <atom label="at9$0"/>
+</sig>
+
+<sig label="this/at2" ID="21" parentID="12">
+   <atom label="at2$0"/>
+   <atom label="at2$1"/>
+   <atom label="at2$2"/>
+</sig>
+
+<sig label="this/at1" ID="22" parentID="12">
+   <atom label="at1$0"/>
+   <atom label="at1$1"/>
+   <atom label="at1$2"/>
+</sig>
+
+<sig label="this/at10" ID="23" parentID="12">
+   <atom label="at10$0"/>
+</sig>
+
+<sig label="this/AtomicTask" ID="12" parentID="2" abstract="yes">
+</sig>
+
+<sig label="this/ct2" ID="24" parentID="13">
+   <atom label="ct2$0"/>
+</sig>
+
+<sig label="this/ct1" ID="25" parentID="13">
+   <atom label="ct1$0"/>
+   <atom label="ct1$1"/>
+   <atom label="ct1$2"/>
+</sig>
+
+<sig label="this/ct4" ID="26" parentID="13">
+   <atom label="ct4$0"/>
+</sig>
+
+<sig label="this/ct3" ID="27" parentID="13">
+   <atom label="ct3$0"/>
+</sig>
+
+<sig label="this/CompoundTask" ID="13" parentID="2" abstract="yes">
+</sig>
+
+<field label="at" ID="28" parentID="13">
+   <tuple> <atom label="ct2$0"/> <atom label="at4$0"/> </tuple>
+   <tuple> <atom label="ct1$0"/> <atom label="at2$2"/> </tuple>
+   <tuple> <atom label="ct1$0"/> <atom label="at1$2"/> </tuple>
+   <tuple> <atom label="ct1$1"/> <atom label="at2$1"/> </tuple>
+   <tuple> <atom label="ct1$1"/> <atom label="at1$1"/> </tuple>
+   <tuple> <atom label="ct1$2"/> <atom label="at2$0"/> </tuple>
+   <tuple> <atom label="ct1$2"/> <atom label="at1$0"/> </tuple>
+   <tuple> <atom label="ct4$0"/> <atom label="at8$0"/> </tuple>
+   <tuple> <atom label="ct4$0"/> <atom label="at9$0"/> </tuple>
+   <tuple> <atom label="ct4$0"/> <atom label="at10$0"/> </tuple>
+   <tuple> <atom label="ct3$0"/> <atom label="at6$0"/> </tuple>
+   <tuple> <atom label="ct3$0"/> <atom label="at5$0"/> </tuple>
+   <tuple> <atom label="ct3$0"/> <atom label="at7$0"/> </tuple>
+   <types> <type ID="13"/> <type ID="12"/> </types>
+</field>
+
+<field label="ct" ID="29" parentID="13">
+   <tuple> <atom label="ct2$0"/> <atom label="ct1$0"/> </tuple>
+   <types> <type ID="13"/> <type ID="13"/> </types>
+</field>
+
+<sig label="univ" ID="2" builtin="yes">
+</sig>
+
+</instance>
+
+</alloy>

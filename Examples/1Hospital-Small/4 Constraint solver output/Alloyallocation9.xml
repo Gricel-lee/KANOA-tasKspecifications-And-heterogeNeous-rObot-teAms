@@ -1,0 +1,359 @@
+<alloy builddate="2012-09-25 15:54 EDT">
+
+<instance bitwidth="9" maxseq="4" command="Run TaskAllocation for 9 int, 4 Robot, 1 r2, 1 r3, 1 r4, 1 r1, 20 Capability, 14 AtomicTask, exactly 1 at4, exactly 1 at3, exactly 1 at6, exactly 1 at5, exactly 1 at8, exactly 1 at7, exactly 1 at9, exactly 3 at2, exactly 3 at1, exactly 1 at10" filename="">
+
+<sig label="seq/Int" ID="0" parentID="1" builtin="yes">
+</sig>
+
+<sig label="Int" ID="1" parentID="2" builtin="yes">
+</sig>
+
+<sig label="String" ID="3" parentID="2" builtin="yes">
+</sig>
+
+<sig label="this/r2" ID="4" parentID="5">
+   <atom label="r2$0"/>
+</sig>
+
+<sig label="this/r3" ID="6" parentID="5">
+   <atom label="r3$0"/>
+</sig>
+
+<sig label="this/r4" ID="7" parentID="5">
+   <atom label="r4$0"/>
+</sig>
+
+<sig label="this/r1" ID="8" parentID="5">
+   <atom label="r1$0"/>
+</sig>
+
+<sig label="this/Robot" ID="5" parentID="2" abstract="yes">
+</sig>
+
+<field label="hascapability" ID="9" parentID="5">
+   <tuple> <atom label="r4$0"/> <atom label="c9_instance1$0"/> </tuple>
+   <tuple> <atom label="r4$0"/> <atom label="c8_instance1$0"/> </tuple>
+   <tuple> <atom label="r4$0"/> <atom label="c7_instance1$0"/> </tuple>
+   <tuple> <atom label="r4$0"/> <atom label="c6_instance1$0"/> </tuple>
+   <tuple> <atom label="r4$0"/> <atom label="c5_instance1$0"/> </tuple>
+   <tuple> <atom label="r4$0"/> <atom label="c4_instance1$0"/> </tuple>
+   <tuple> <atom label="r4$0"/> <atom label="c10_instance1$0"/> </tuple>
+   <tuple> <atom label="r3$0"/> <atom label="c9_instance0$0"/> </tuple>
+   <tuple> <atom label="r3$0"/> <atom label="c8_instance0$0"/> </tuple>
+   <tuple> <atom label="r3$0"/> <atom label="c7_instance0$0"/> </tuple>
+   <tuple> <atom label="r3$0"/> <atom label="c6_instance0$0"/> </tuple>
+   <tuple> <atom label="r3$0"/> <atom label="c5_instance0$0"/> </tuple>
+   <tuple> <atom label="r3$0"/> <atom label="c4_instance0$0"/> </tuple>
+   <tuple> <atom label="r3$0"/> <atom label="c10_instance0$0"/> </tuple>
+   <tuple> <atom label="r2$0"/> <atom label="c3_instance0$0"/> </tuple>
+   <tuple> <atom label="r2$0"/> <atom label="c2_instance0$0"/> </tuple>
+   <tuple> <atom label="r2$0"/> <atom label="c1_instance0$0"/> </tuple>
+   <tuple> <atom label="r1$0"/> <atom label="c3_instance1$0"/> </tuple>
+   <tuple> <atom label="r1$0"/> <atom label="c2_instance1$0"/> </tuple>
+   <tuple> <atom label="r1$0"/> <atom label="c1_instance1$0"/> </tuple>
+   <types> <type ID="5"/> <type ID="10"/> </types>
+</field>
+
+<field label="totaltime" ID="11" parentID="5">
+   <tuple> <atom label="r4$0"/> <atom label="5"/> </tuple>
+   <tuple> <atom label="r3$0"/> <atom label="7"/> </tuple>
+   <tuple> <atom label="r2$0"/> <atom label="7"/> </tuple>
+   <tuple> <atom label="r1$0"/> <atom label="6"/> </tuple>
+   <types> <type ID="5"/> <type ID="1"/> </types>
+</field>
+
+<field label="distX" ID="12" parentID="5">
+   <tuple> <atom label="r4$0"/> <atom label="150"/> </tuple>
+   <tuple> <atom label="r3$0"/> <atom label="100"/> </tuple>
+   <tuple> <atom label="r2$0"/> <atom label="50"/> </tuple>
+   <tuple> <atom label="r1$0"/> <atom label="200"/> </tuple>
+   <types> <type ID="5"/> <type ID="1"/> </types>
+</field>
+
+<field label="distY" ID="13" parentID="5">
+   <tuple> <atom label="r4$0"/> <atom label="100"/> </tuple>
+   <tuple> <atom label="r3$0"/> <atom label="100"/> </tuple>
+   <tuple> <atom label="r2$0"/> <atom label="100"/> </tuple>
+   <tuple> <atom label="r1$0"/> <atom label="100"/> </tuple>
+   <types> <type ID="5"/> <type ID="1"/> </types>
+</field>
+
+<field label="x" ID="14" parentID="5">
+   <tuple> <atom label="r4$0"/> <atom label="175"/> </tuple>
+   <tuple> <atom label="r3$0"/> <atom label="125"/> </tuple>
+   <tuple> <atom label="r2$0"/> <atom label="75"/> </tuple>
+   <tuple> <atom label="r1$0"/> <atom label="25"/> </tuple>
+   <types> <type ID="5"/> <type ID="1"/> </types>
+</field>
+
+<field label="y" ID="15" parentID="5">
+   <tuple> <atom label="r4$0"/> <atom label="25"/> </tuple>
+   <tuple> <atom label="r3$0"/> <atom label="25"/> </tuple>
+   <tuple> <atom label="r2$0"/> <atom label="25"/> </tuple>
+   <tuple> <atom label="r1$0"/> <atom label="25"/> </tuple>
+   <types> <type ID="5"/> <type ID="1"/> </types>
+</field>
+
+<sig label="this/c10_instance0" ID="16" parentID="17">
+   <atom label="c10_instance0$0"/>
+</sig>
+
+<sig label="this/c10_instance1" ID="18" parentID="17">
+   <atom label="c10_instance1$0"/>
+</sig>
+
+<sig label="this/c10" ID="17" parentID="10" abstract="yes">
+</sig>
+
+<sig label="this/c1_instance0" ID="19" parentID="20">
+   <atom label="c1_instance0$0"/>
+</sig>
+
+<sig label="this/c1_instance1" ID="21" parentID="20">
+   <atom label="c1_instance1$0"/>
+</sig>
+
+<sig label="this/c1" ID="20" parentID="10" abstract="yes">
+</sig>
+
+<sig label="this/c2_instance0" ID="22" parentID="23">
+   <atom label="c2_instance0$0"/>
+</sig>
+
+<sig label="this/c2_instance1" ID="24" parentID="23">
+   <atom label="c2_instance1$0"/>
+</sig>
+
+<sig label="this/c2" ID="23" parentID="10" abstract="yes">
+</sig>
+
+<sig label="this/c3_instance0" ID="25" parentID="26">
+   <atom label="c3_instance0$0"/>
+</sig>
+
+<sig label="this/c3_instance1" ID="27" parentID="26">
+   <atom label="c3_instance1$0"/>
+</sig>
+
+<sig label="this/c3" ID="26" parentID="10" abstract="yes">
+</sig>
+
+<sig label="this/c4_instance0" ID="28" parentID="29">
+   <atom label="c4_instance0$0"/>
+</sig>
+
+<sig label="this/c4_instance1" ID="30" parentID="29">
+   <atom label="c4_instance1$0"/>
+</sig>
+
+<sig label="this/c4" ID="29" parentID="10" abstract="yes">
+</sig>
+
+<sig label="this/c5_instance0" ID="31" parentID="32">
+   <atom label="c5_instance0$0"/>
+</sig>
+
+<sig label="this/c5_instance1" ID="33" parentID="32">
+   <atom label="c5_instance1$0"/>
+</sig>
+
+<sig label="this/c5" ID="32" parentID="10" abstract="yes">
+</sig>
+
+<sig label="this/c6_instance0" ID="34" parentID="35">
+   <atom label="c6_instance0$0"/>
+</sig>
+
+<sig label="this/c6_instance1" ID="36" parentID="35">
+   <atom label="c6_instance1$0"/>
+</sig>
+
+<sig label="this/c6" ID="35" parentID="10" abstract="yes">
+</sig>
+
+<sig label="this/c7_instance0" ID="37" parentID="38">
+   <atom label="c7_instance0$0"/>
+</sig>
+
+<sig label="this/c7_instance1" ID="39" parentID="38">
+   <atom label="c7_instance1$0"/>
+</sig>
+
+<sig label="this/c7" ID="38" parentID="10" abstract="yes">
+</sig>
+
+<sig label="this/c8_instance0" ID="40" parentID="41">
+   <atom label="c8_instance0$0"/>
+</sig>
+
+<sig label="this/c8_instance1" ID="42" parentID="41">
+   <atom label="c8_instance1$0"/>
+</sig>
+
+<sig label="this/c8" ID="41" parentID="10" abstract="yes">
+</sig>
+
+<sig label="this/c9_instance0" ID="43" parentID="44">
+   <atom label="c9_instance0$0"/>
+</sig>
+
+<sig label="this/c9_instance1" ID="45" parentID="44">
+   <atom label="c9_instance1$0"/>
+</sig>
+
+<sig label="this/c9" ID="44" parentID="10" abstract="yes">
+</sig>
+
+<sig label="this/Capability" ID="10" parentID="2" abstract="yes">
+</sig>
+
+<field label="belongsto" ID="46" parentID="10">
+   <tuple> <atom label="c9_instance1$0"/> <atom label="r4$0"/> </tuple>
+   <tuple> <atom label="c9_instance0$0"/> <atom label="r3$0"/> </tuple>
+   <tuple> <atom label="c8_instance1$0"/> <atom label="r4$0"/> </tuple>
+   <tuple> <atom label="c8_instance0$0"/> <atom label="r3$0"/> </tuple>
+   <tuple> <atom label="c7_instance1$0"/> <atom label="r4$0"/> </tuple>
+   <tuple> <atom label="c7_instance0$0"/> <atom label="r3$0"/> </tuple>
+   <tuple> <atom label="c6_instance1$0"/> <atom label="r4$0"/> </tuple>
+   <tuple> <atom label="c6_instance0$0"/> <atom label="r3$0"/> </tuple>
+   <tuple> <atom label="c5_instance1$0"/> <atom label="r4$0"/> </tuple>
+   <tuple> <atom label="c5_instance0$0"/> <atom label="r3$0"/> </tuple>
+   <tuple> <atom label="c4_instance1$0"/> <atom label="r4$0"/> </tuple>
+   <tuple> <atom label="c4_instance0$0"/> <atom label="r3$0"/> </tuple>
+   <tuple> <atom label="c3_instance1$0"/> <atom label="r1$0"/> </tuple>
+   <tuple> <atom label="c3_instance0$0"/> <atom label="r2$0"/> </tuple>
+   <tuple> <atom label="c2_instance1$0"/> <atom label="r1$0"/> </tuple>
+   <tuple> <atom label="c2_instance0$0"/> <atom label="r2$0"/> </tuple>
+   <tuple> <atom label="c1_instance1$0"/> <atom label="r1$0"/> </tuple>
+   <tuple> <atom label="c1_instance0$0"/> <atom label="r2$0"/> </tuple>
+   <tuple> <atom label="c10_instance1$0"/> <atom label="r4$0"/> </tuple>
+   <tuple> <atom label="c10_instance0$0"/> <atom label="r3$0"/> </tuple>
+   <types> <type ID="10"/> <type ID="5"/> </types>
+</field>
+
+<sig label="this/at4" ID="47" parentID="48">
+   <atom label="at4$0"/>
+</sig>
+
+<sig label="this/at3" ID="49" parentID="48">
+   <atom label="at3$0"/>
+</sig>
+
+<sig label="this/at6" ID="50" parentID="48">
+   <atom label="at6$0"/>
+</sig>
+
+<sig label="this/at5" ID="51" parentID="48">
+   <atom label="at5$0"/>
+</sig>
+
+<sig label="this/at8" ID="52" parentID="48">
+   <atom label="at8$0"/>
+</sig>
+
+<sig label="this/at7" ID="53" parentID="48">
+   <atom label="at7$0"/>
+</sig>
+
+<sig label="this/at9" ID="54" parentID="48">
+   <atom label="at9$0"/>
+</sig>
+
+<sig label="this/at2" ID="55" parentID="48">
+   <atom label="at2$0"/>
+   <atom label="at2$1"/>
+   <atom label="at2$2"/>
+</sig>
+
+<sig label="this/at1" ID="56" parentID="48">
+   <atom label="at1$0"/>
+   <atom label="at1$1"/>
+   <atom label="at1$2"/>
+</sig>
+
+<sig label="this/at10" ID="57" parentID="48">
+   <atom label="at10$0"/>
+</sig>
+
+<sig label="this/AtomicTask" ID="48" parentID="2" abstract="yes">
+</sig>
+
+<field label="runby" ID="58" parentID="48">
+   <tuple> <atom label="at4$0"/> <atom label="c3_instance0$0"/> </tuple>
+   <tuple> <atom label="at3$0"/> <atom label="c4_instance1$0"/> </tuple>
+   <tuple> <atom label="at3$0"/> <atom label="c4_instance0$0"/> </tuple>
+   <tuple> <atom label="at6$0"/> <atom label="c6_instance1$0"/> </tuple>
+   <tuple> <atom label="at5$0"/> <atom label="c5_instance0$0"/> </tuple>
+   <tuple> <atom label="at8$0"/> <atom label="c8_instance0$0"/> </tuple>
+   <tuple> <atom label="at7$0"/> <atom label="c7_instance0$0"/> </tuple>
+   <tuple> <atom label="at9$0"/> <atom label="c9_instance1$0"/> </tuple>
+   <tuple> <atom label="at2$0"/> <atom label="c2_instance1$0"/> </tuple>
+   <tuple> <atom label="at2$1"/> <atom label="c2_instance1$0"/> </tuple>
+   <tuple> <atom label="at2$2"/> <atom label="c2_instance1$0"/> </tuple>
+   <tuple> <atom label="at1$0"/> <atom label="c1_instance0$0"/> </tuple>
+   <tuple> <atom label="at1$1"/> <atom label="c1_instance0$0"/> </tuple>
+   <tuple> <atom label="at1$2"/> <atom label="c1_instance0$0"/> </tuple>
+   <tuple> <atom label="at10$0"/> <atom label="c10_instance0$0"/> </tuple>
+   <types> <type ID="48"/> <type ID="10"/> </types>
+</field>
+
+<field label="time" ID="59" parentID="48">
+   <tuple> <atom label="at4$0"/> <atom label="4"/> </tuple>
+   <tuple> <atom label="at3$0"/> <atom label="3"/> </tuple>
+   <tuple> <atom label="at6$0"/> <atom label="1"/> </tuple>
+   <tuple> <atom label="at5$0"/> <atom label="1"/> </tuple>
+   <tuple> <atom label="at8$0"/> <atom label="1"/> </tuple>
+   <tuple> <atom label="at7$0"/> <atom label="1"/> </tuple>
+   <tuple> <atom label="at9$0"/> <atom label="1"/> </tuple>
+   <tuple> <atom label="at2$0"/> <atom label="2"/> </tuple>
+   <tuple> <atom label="at2$1"/> <atom label="2"/> </tuple>
+   <tuple> <atom label="at2$2"/> <atom label="2"/> </tuple>
+   <tuple> <atom label="at1$0"/> <atom label="1"/> </tuple>
+   <tuple> <atom label="at1$1"/> <atom label="1"/> </tuple>
+   <tuple> <atom label="at1$2"/> <atom label="1"/> </tuple>
+   <tuple> <atom label="at10$0"/> <atom label="1"/> </tuple>
+   <types> <type ID="48"/> <type ID="1"/> </types>
+</field>
+
+<field label="x" ID="60" parentID="48">
+   <tuple> <atom label="at4$0"/> <atom label="75"/> </tuple>
+   <tuple> <atom label="at3$0"/> <atom label="25"/> </tuple>
+   <tuple> <atom label="at6$0"/> <atom label="75"/> </tuple>
+   <tuple> <atom label="at5$0"/> <atom label="25"/> </tuple>
+   <tuple> <atom label="at8$0"/> <atom label="25"/> </tuple>
+   <tuple> <atom label="at7$0"/> <atom label="125"/> </tuple>
+   <tuple> <atom label="at9$0"/> <atom label="75"/> </tuple>
+   <tuple> <atom label="at2$0"/> <atom label="225"/> </tuple>
+   <tuple> <atom label="at2$1"/> <atom label="225"/> </tuple>
+   <tuple> <atom label="at2$2"/> <atom label="225"/> </tuple>
+   <tuple> <atom label="at1$0"/> <atom label="25"/> </tuple>
+   <tuple> <atom label="at1$1"/> <atom label="25"/> </tuple>
+   <tuple> <atom label="at1$2"/> <atom label="25"/> </tuple>
+   <tuple> <atom label="at10$0"/> <atom label="125"/> </tuple>
+   <types> <type ID="48"/> <type ID="1"/> </types>
+</field>
+
+<field label="y" ID="61" parentID="48">
+   <tuple> <atom label="at4$0"/> <atom label="125"/> </tuple>
+   <tuple> <atom label="at3$0"/> <atom label="125"/> </tuple>
+   <tuple> <atom label="at6$0"/> <atom label="125"/> </tuple>
+   <tuple> <atom label="at5$0"/> <atom label="125"/> </tuple>
+   <tuple> <atom label="at8$0"/> <atom label="125"/> </tuple>
+   <tuple> <atom label="at7$0"/> <atom label="125"/> </tuple>
+   <tuple> <atom label="at9$0"/> <atom label="125"/> </tuple>
+   <tuple> <atom label="at2$0"/> <atom label="125"/> </tuple>
+   <tuple> <atom label="at2$1"/> <atom label="125"/> </tuple>
+   <tuple> <atom label="at2$2"/> <atom label="125"/> </tuple>
+   <tuple> <atom label="at1$0"/> <atom label="125"/> </tuple>
+   <tuple> <atom label="at1$1"/> <atom label="125"/> </tuple>
+   <tuple> <atom label="at1$2"/> <atom label="125"/> </tuple>
+   <tuple> <atom label="at10$0"/> <atom label="125"/> </tuple>
+   <types> <type ID="48"/> <type ID="1"/> </types>
+</field>
+
+<sig label="univ" ID="2" builtin="yes">
+</sig>
+
+</instance>
+
+</alloy>
